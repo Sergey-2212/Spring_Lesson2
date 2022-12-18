@@ -20,6 +20,7 @@ public class CartService {
 
     public void addProduct(Product product) {
         cart.addProductToCart(product);
+        System.out.println(product.getTitle() + " добавлен в корзину.");
     }
 
     public void deleteProduct(Product product) {
