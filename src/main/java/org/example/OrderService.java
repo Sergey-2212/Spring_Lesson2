@@ -23,6 +23,7 @@ public class OrderService {
             product = productService.getProductByTitle(pr);
         } catch (ProductNotFoundException e) {
             System.out.println("Продукта нет в магазине.");
+            return;
         }
         cartService.addProduct(product);
     }
@@ -33,6 +34,7 @@ public class OrderService {
             product = productService.getProductByTitle(pr);
         } catch (ProductNotFoundException e) {
             System.out.println("Продукта нет в магазине.");
+            return;
         }
         cartService.deleteProduct(product);
     }

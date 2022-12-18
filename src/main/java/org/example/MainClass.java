@@ -36,6 +36,7 @@ public class MainClass
             } else if(prs[0].toLowerCase().contentEquals("exit")) {
                 System.out.println("До скорой встречи!");
                 context.close();
+                break;
             }
         }
     }
